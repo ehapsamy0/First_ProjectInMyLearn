@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+{% load bootstrap4 %}
+
+{% load static %}
+
+
+{% block body %}
+<div class="container change_pass" style="margin:100px;">
+        <form method="post" >
+            {% csrf_token%}
+            {% bootstrap_form user_form %}
+            {% bootstrap_form profile_form %}
+
+            {% buttons %}
+        <button type="submit" class="btn btn-primary">Save Shange</button>
+    {% endbuttons %}
+
+        </form>
+    </div>
+{% endblock %}

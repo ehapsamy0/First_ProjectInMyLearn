@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'notes_app/css/style.css' %}">
+</head>
+<body>
+  <h1>Welcom In Notes</h1>
+
+  <a href="{% url 'notes:add_note' %}">
+      addNewNote
+  </a>
+  <br>
+  <hr>
+
+  <a href="" class="aa">{{note}}</a>
+  <br>
+
+</body>
+</html>
